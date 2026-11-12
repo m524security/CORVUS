@@ -1,0 +1,22 @@
+# CORVUS — ignore scan artifacts & local tooling
+corvus_workspace/
+corvus_tools/
+corvus_reports/
+*_report.json
+*.sarif.json
+*_ai_analysis.md
+corvus_report.json
+wapiti_report.json
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Secrets / local config
+*.env
+.env*
+secrets.*
+.pytest_cache/

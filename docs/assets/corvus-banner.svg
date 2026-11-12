@@ -1,0 +1,98 @@
+<svg width="1280" height="400" viewBox="0 0 1280 400" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="CORVUS — Autonomous Web and API Security Framework">
+  <defs>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="0.55" stop-color="#6366f1"/>
+      <stop offset="1" stop-color="#a855f7"/>
+    </linearGradient>
+    <linearGradient id="wordmark" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#f8fafc"/>
+      <stop offset="1" stop-color="#cbd5e1"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.28" cy="0.4" r="0.7">
+      <stop offset="0" stop-color="#6366f1" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#6366f1" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="soft" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="6" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <!-- backdrop -->
+  <rect x="0" y="0" width="1280" height="400" rx="24" fill="#0a0e16"/>
+  <rect x="0" y="0" width="1280" height="400" rx="24" fill="url(#glow)"/>
+  <rect x="1" y="1" width="1278" height="398" rx="23" fill="none" stroke="#1e2633" stroke-width="2"/>
+
+  <!-- faint grid ticks -->
+  <g stroke="#141b26" stroke-width="1">
+    <line x1="0" y1="100" x2="1280" y2="100"/>
+    <line x1="0" y1="300" x2="1280" y2="300"/>
+  </g>
+
+  <!-- ── Raven mark: angular head reading as both a raven and a "C" ── -->
+  <g transform="translate(150 200)" filter="url(#soft)">
+    <!-- hex frame -->
+    <polygon points="0,-118 102,-59 102,59 0,118 -102,59 -102,-59"
+             fill="#0d1420" stroke="url(#accent)" stroke-width="3"/>
+    <!-- raven head (facets) -->
+    <g>
+      <!-- crown / back of head -->
+      <polygon points="46,-70 6,-40 22,6 60,-6 66,-46" fill="url(#accent)" opacity="0.95"/>
+      <!-- face -->
+      <polygon points="6,-40 -58,-8 -78,20 -20,30 22,6" fill="url(#accent)" opacity="0.80"/>
+      <!-- beak -->
+      <polygon points="-78,20 -20,30 -30,48" fill="url(#accent)" opacity="0.95"/>
+      <!-- lower jaw / throat -->
+      <polygon points="-20,30 22,6 40,44 4,64" fill="url(#accent)" opacity="0.65"/>
+      <!-- neck -->
+      <polygon points="22,6 60,-6 62,54 40,44" fill="url(#accent)" opacity="0.5"/>
+      <!-- eye -->
+      <circle cx="0" cy="-6" r="7" fill="#0a0e16"/>
+      <circle cx="1.5" cy="-8" r="2.4" fill="#22d3ee"/>
+    </g>
+  </g>
+
+  <!-- ── Wordmark ── -->
+  <text x="300" y="176" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="112" font-weight="800" letter-spacing="10" fill="url(#wordmark)">CORVUS</text>
+
+  <!-- accent underline -->
+  <rect x="304" y="196" width="470" height="4" rx="2" fill="url(#accent)"/>
+
+  <!-- tagline -->
+  <text x="306" y="236" font-family="'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+        font-size="27" font-weight="500" letter-spacing="1.5" fill="#94a3b8">Autonomous Web &amp; API Security Framework</text>
+
+  <!-- badges -->
+  <g font-family="'Segoe UI', Arial, sans-serif" font-size="18" font-weight="600" fill="#cbd5e1">
+    <g transform="translate(306 274)">
+      <rect x="0" y="0" width="168" height="38" rx="8" fill="#111a27" stroke="#243043"/>
+      <text x="84" y="25" text-anchor="middle">OWASP Top 10</text>
+    </g>
+    <g transform="translate(486 274)">
+      <rect x="0" y="0" width="176" height="38" rx="8" fill="#111a27" stroke="#243043"/>
+      <text x="88" y="25" text-anchor="middle">MITRE ATT&amp;CK</text>
+    </g>
+    <g transform="translate(674 274)">
+      <rect x="0" y="0" width="150" height="38" rx="8" fill="#111a27" stroke="#243043"/>
+      <text x="75" y="25" text-anchor="middle">CVSS v3.1</text>
+    </g>
+    <g transform="translate(836 274)">
+      <rect x="0" y="0" width="176" height="38" rx="8" fill="#111a27" stroke="#243043"/>
+      <text x="88" y="25" text-anchor="middle">OAST-Verified</text>
+    </g>
+  </g>
+
+  <!-- version chip -->
+  <g transform="translate(306 330)">
+    <rect x="0" y="0" width="360" height="34" rx="17" fill="#0d1420" stroke="url(#accent)" stroke-width="1.5"/>
+    <circle cx="22" cy="17" r="5" fill="#22d3ee"/>
+    <text x="40" y="23" font-family="'Segoe UI', Arial, sans-serif" font-size="17" font-weight="600"
+          letter-spacing="1" fill="#cbd5e1">v11.0.0  ·  NIGHT REAPER  ·  MIT</text>
+  </g>
+
+  <!-- corner tag -->
+  <text x="1246" y="366" text-anchor="end" font-family="'Courier New', monospace" font-size="15"
+        fill="#3b4757" letter-spacing="1">// evidence, not guesses</text>
+</svg>
